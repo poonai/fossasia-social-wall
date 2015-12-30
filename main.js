@@ -4,13 +4,7 @@ var app=angular.module('app',['angular-loading-bar']);
 app.service('tweets',function ($http) {
   var factory={};
 
-  var promise=$http({
-    method:'GET',
-    url:'https://fossasia.herokuapp.com/tweets'
-  }).then(function (response) {
-    return response;
 
-  });
 
   return{
     getTweets:function () {
